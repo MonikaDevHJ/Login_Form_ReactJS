@@ -17,7 +17,7 @@ const[action , setaction] = useState(" sign up ")
         </div>
 
         <div className="inputs ">
-            {action==="login" ? <div></div> : 
+            {action==="login" ? null : 
             <div className="input">
                 <img src={email} alt="emailimg" />
                 <input placeholder="Enter Your Name" type="name" />
@@ -31,7 +31,7 @@ const[action , setaction] = useState(" sign up ")
                 <input placeholder="Enter Your Password" type="password" />
             </div>
         </div> 
-        {action==="Sign Up" ? <div></div>:
+        {action==="Sign Up" ? null:
          <div className="Forgot-password">Lost Password? <span>click here</span></div>}
        <div className="submit-container">
         <div className={action==="login"? "submit Gray" : "submit"} onClick={()=>{setaction("Sign Up")}}>Sign Up</div>
